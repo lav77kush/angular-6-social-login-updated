@@ -1,7 +1,7 @@
 # Original project : sabyasachibiswal https://github.com/sabyasachibiswal/angular5-social-login
 
 
-Social login api for Angular 6. Includes Facebook, Google login and Linkedin. 
+Social login api for Angular 6. Includes Facebook, Google and Linkedin. 
 
 ![Generic badge](https://img.shields.io/badge/build-passing-green.svg)
 ![Generic badge](https://img.shields.io/badge/Angular-6-green.svg)
@@ -14,7 +14,7 @@ Social login api for Angular 6. Includes Facebook, Google login and Linkedin.
 ### Install via npm 
 
 ```sh
-npm install --save angular-6-social-login
+npm install --save angular-6-social-login-fixed
 ```
 
 ### Import the module
@@ -30,7 +30,7 @@ import {
     GoogleLoginProvider,
     FacebookLoginProvider,
     LinkedinLoginProvider,
-} from "angular-6-social-login";
+} from "angular-6-social-login-fixed";
 
 
 // Configs 
@@ -83,7 +83,7 @@ import {
     AuthService,
     FacebookLoginProvider,
     GoogleLoginProvider
-} from 'angular-6-social-login';
+} from 'angular-6-social-login-fixed';
 
 @Component({
   selector: 'app-signin',
@@ -98,13 +98,17 @@ export class SigninComponent implements OnInit {
   
   public socialSignIn(socialPlatform : string) {
     let socialPlatformProvider;
-    if(socialPlatform == "facebook"){
-      socialPlatformProvider = FacebookLoginProvider.PROVIDER_ID;
-    }else if(socialPlatform == "google"){
-      socialPlatformProvider = GoogleLoginProvider.PROVIDER_ID;
-    } else if (socialPlatform == "linkedin") {
-      socialPlatformProvider = LinkedinLoginProvider.PROVIDER_ID;
-    }
+        switch (socialPlatform) {
+        case 'facebook':
+            socialPlatformProvider = FacebookLoginProvider.PROVIDER_ID;
+            break;
+        case 'google':
+            socialPlatformProvider = GoogleLoginProvider.PROVIDER_ID;
+            break;
+        case 'linkedin':
+            socialPlatformProvider = LinkedinLoginProvider.PROVIDER_ID;
+            break;
+        }
     
     this.socialAuthService.signIn(socialPlatformProvider).then(
       (userData) => {
@@ -129,7 +133,8 @@ In `signin.component.html`,
 </h1>
 
 <button (click)="socialSignIn('facebook')">Sign in with Facebook</button>
-<button (click)="socialSignIn('google')">Sign in with Google</button>              
+<button (click)="socialSignIn('google')">Sign in with Google</button>
+<button (click)="socialSignIn('linkedin')">Sign in with Google</button>         
 ```
 
 
