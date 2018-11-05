@@ -11,7 +11,7 @@ export class LinkedinLoginProvider extends BaseLoginProvider {
   constructor(private clientId: string) {
     super();
     this.loginProviderObj.id = clientId;
-    this.loginProviderObj.name = 'linkedin';
+    this.loginProviderObj.name = 'LINKEDIN';
     this.loginProviderObj.url = 'https://platform.linkedin.com/in.js';
   }
 
