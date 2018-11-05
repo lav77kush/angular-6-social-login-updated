@@ -1,7 +1,7 @@
 {
-  "name": "angular-6-social-login",
-  "version": "1.1.0",
-  "description": "Agular 6 : Social Login (Facebook and Google)",
+  "name": "angular-6-social-login-fixed",
+  "version": "1.0.0",
+  "description": "Agular 6: Social Login (Facebook, Google and Linkedin)",
   "scripts": {
     "build": "gulp build",
     "build:watch": "gulp",
@@ -13,11 +13,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/high54/angular-6-social-login"
+    "url": "https://github.com/AlexandreVeronezi/angular-6-social-login"
   },
   "author": {
-    "name": "Julien Bertacco",
-    "email": "julien.bertacco@gmail.com"
+    "name": "Alexandre Veronezi",
+    "email": "alexandre.sveronezi@gmail.com"
   },
   "keywords": [
     "angular",
