@@ -1,6 +1,6 @@
 {
   "name": "angular-15-social-login-updated",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Angular 15: Social Login (Facebook, Google and Linkedin)",
   "scripts": {
     "build": "gulp build",
