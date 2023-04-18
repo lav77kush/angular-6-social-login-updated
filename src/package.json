@@ -1,14 +1,14 @@
 {
-  "name": "angular-6-social-login",
-  "version": "1.1.0",
-  "description": "Agular 6 : Social Login (Facebook and Google)",
+  "name": "angular-1-social-login",
+  "version": "5.0.0",
+  "description": "Angular 15 : Social Login (Facebook and Google)",
   "repository": {
     "type": "git",
     "url": "https://github.com/high54/angular-6-social-login"
   },
   "author": {
-    "name": "Julien Bertacco",
-    "email": "julien.bertacco@gmail.com"
+    "name": "lavkush yadav",
+    "email": "lavkush77infotech@gmail.com"
   },
   "keywords": [
     "angular",
@@ -23,7 +23,7 @@
     "angular social authentication",
     "angular-social-login",
     "angular 15 -social-login",
-    "angular-6-social-login",
+    "angular-15-social-login",
     "social-authentication",
     "social-login",
     "google-authentication",
@@ -36,10 +36,10 @@
   "bugs": {
     "url": "https://github.com/high54/angular-6-social-login/issues"
   },
-  "main": "angular-6-social-login.umd.js",
-  "module": "angular-6-social-login.js",
-  "jsnext:main": "angular-6-social-login.js",
-  "typings": "angular-6-social-login.d.ts",
+  "main": "angular-15-social-login.umd.js",
+  "module": "angular-15-social-login.js",
+  "jsnext:main": "angular-15-social-login.js",
+  "typings": "angular-15-social-login.d.ts",
   "peerDependencies": {
     "@angular/common": "^5.0.0",
     "@angular/core": "^5.0.0",
