@@ -70,13 +70,16 @@ export class AuthService {
       if (this._user && this._user.provider) {
         let providerId = this._user.provider;
         let providerObject = this.providers.get(providerId);
-        providerObject.signOut().then(() => {
-          this._user = null;
-          this._authState.next(null);
-          resolve('');
-        }).catch((err) => {
-          this._authState.next(null);
-        });
+        if(providerObject){
+          providerObject.signOut().then(() => {
+            this._user = new SocialUser();
+            this._authState.next(this._user);
+            resolve('');
+          }).catch((err) => {
+            this._authState.next(this._user);
+          });
+        }
+       
       } else {
         reject(AuthService.LOGIN_PROVIDER_NOT_FOUND);
       }
