@@ -1,6 +1,6 @@
 {
   "name": "angular-1-social-login",
-  "version": "6.3.0",
+  "version": "6.2.0",
   "description": "Angular 15 : Social Login (Facebook and Google)",
   "repository": {
     "type": "git",
@@ -37,7 +37,7 @@
   "bugs": {
     "url": "https://github.com/high54/angular-6-social-login/issues"
   },
-  "main": "angular-15-social-login.umd.js",
+  "main": "index.ts",
   "module": "angular-15-social-login.js",
   "jsnext:main": "angular-15-social-login.js",
   "typings": "angular-15-social-login.d.ts",

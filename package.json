@@ -97,7 +97,6 @@
   ],
   "license": "MIT",
   "name": "angular-15-social-login-updated",
-  "files": [ "dist" ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lav77kush/angular-6-social-login-updated.git"
@@ -106,15 +105,11 @@
     "build": "gulp build",
     "build:watch": "gulp",
     "docs": "npm run docs:build",
-    "main": "angular-15-social-login.umd.js",
-    "module": "angular-15-social-login.js",
-    "jsnext:main": "angular-15-social-login.js",
-    "typings": "angular-15-social-login.d.ts",
-    "prepublish": "npm run build",
+    "main":"index.ts",
     "docs:build": "compodoc -p tsconfig.json -n ng4-social-login -d docs --hideGenerator",
     "docs:serve": "npm run docs:build -- -s",
     "docs:watch": "npm run docs:build -- -s -w",
     "lint": "tslint --type-check  src/**/*.ts"
   },
-  "version": "6.3.0"
+  "version": "6.6.0"
 }
