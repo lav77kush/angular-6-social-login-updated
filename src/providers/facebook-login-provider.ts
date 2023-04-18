@@ -65,7 +65,7 @@ export class FacebookLoginProvider extends BaseLoginProvider {
   signOut(): Promise<any> {
     return new Promise((resolve, reject) => {
       FB.logout((response: any) => {
-        resolve();
+        resolve('');
       });
     });
   }

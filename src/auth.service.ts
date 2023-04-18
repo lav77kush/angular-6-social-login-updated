@@ -29,8 +29,8 @@ export class AuthService {
 
   private providers: Map<string, LoginProvider>;
 
-  private _user: SocialUser = null;
-  private _authState: BehaviorSubject<SocialUser> = new BehaviorSubject(null);
+  private _user: SocialUser = new SocialUser();
+  private _authState: BehaviorSubject<SocialUser> = new BehaviorSubject(this._user);
 
   get authState(): Observable<SocialUser> {
     return this._authState.asObservable();
@@ -73,7 +73,7 @@ export class AuthService {
         providerObject.signOut().then(() => {
           this._user = null;
           this._authState.next(null);
-          resolve();
+          resolve('');
         }).catch((err) => {
           this._authState.next(null);
         });

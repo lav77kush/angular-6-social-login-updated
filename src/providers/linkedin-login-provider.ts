@@ -67,7 +67,7 @@ export class LinkedinLoginProvider extends BaseLoginProvider {
   signOut(): Promise<any> {
     return new Promise((resolve, reject) => {
       IN.User.logout((response: any) => {
-        resolve();
+        resolve('');
       }, (err: any) => {
         reject(err);
       });

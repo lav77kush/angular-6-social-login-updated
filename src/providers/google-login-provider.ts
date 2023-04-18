@@ -63,7 +63,7 @@ export class GoogleLoginProvider extends BaseLoginProvider {
         if (err) {
           reject(err);
         } else {
-          resolve();
+          resolve('');
         }
       });
     });
