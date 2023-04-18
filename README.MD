@@ -1,7 +1,7 @@
 # Original project : sabyasachibiswal https://github.com/sabyasachibiswal/angular5-social-login
 
 
-Social login api for Angular 6. Includes Facebook, Google and Linkedin. 
+Social login api for angular 15 . Includes Facebook, Google and Linkedin. 
 
 ![Generic badge](https://img.shields.io/badge/build-passing-green.svg)
 ![Generic badge](https://img.shields.io/badge/Angular-6-green.svg)
@@ -14,7 +14,7 @@ Social login api for Angular 6. Includes Facebook, Google and Linkedin.
 ### Install via npm 
 
 ```sh
-npm install --save angular-6-social-login-fixed
+npm install --save angular-15-social-login-updated
 ```
 
 ### Import the module
@@ -30,7 +30,7 @@ import {
     GoogleLoginProvider,
     FacebookLoginProvider,
     LinkedinLoginProvider,
-} from "angular-6-social-login-fixed";
+} from "angular-15-social-login-updated";
 
 
 // Configs 
@@ -83,7 +83,7 @@ import {
     AuthService,
     FacebookLoginProvider,
     GoogleLoginProvider
-} from 'angular-6-social-login-fixed';
+} from 'angular-15-social-login-updated';
 
 @Component({
   selector: 'app-signin',
